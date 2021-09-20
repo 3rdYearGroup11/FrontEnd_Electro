@@ -136,6 +136,7 @@ export default function DeviceChartSpTOU() {
  
   <Typography color="text.primary">Device Wise Chart Usage</Typography>
 </Breadcrumbs>
+
       <h2 className="MainTitle-tou text-center" style={{marginBottom: '2rem'}}> <b>DEVICE WISE USAGE - TOU </b></h2>
       <div className="row row-tou">       
         <div className="col-sm-6">
@@ -145,6 +146,7 @@ export default function DeviceChartSpTOU() {
               <div className="col-sm-12">
                 <div className="card chart-tou">
                   <div className="card-body chartbody">
+
                     <div className="chart-devicewise">
                       <Pie
                         data={{

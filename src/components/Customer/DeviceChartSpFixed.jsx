@@ -117,6 +117,7 @@ export default function DeviceChartfixed() {
   <Typography color="text.primary">Device Wise Chart Usage</Typography>
 </Breadcrumbs>
 
+
       <h2 className="MainTitle-fixed">
         <b>DEVICE WISE USAGE - FIXED</b>
       </h2>
@@ -128,6 +129,7 @@ export default function DeviceChartfixed() {
               <div className="col-sm-12">
                 <div className="card chart-fixed">
                   <div className="card-body">
+
                     <div className="chart-devicewise">
                       <Pie
                         data={{
