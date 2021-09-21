@@ -70,7 +70,7 @@ const TOUSuggestions = (props) => {
       }
     })
 
-    console.log(response.data.data)
+    //console.log(response.data.data)
 
    
     if (response.data.status) {
@@ -124,7 +124,7 @@ const TOUSuggestions = (props) => {
         authorization: `Token ${token}`
       }
     })
-    console.log("The Bill Id is:",response.data.data[0].bill_id);
+
     if(response.data.status){
       var today = new Date();
      var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
