@@ -161,16 +161,12 @@ export default function DeviceChartfixed() {
                 <div className="card chart-fixed">
                   <div className="card-body">
                     <div className="chart-devicewise">
+                    <button className="myButton"/>
                       <Bar
                         data={{
                           labels: appliance,
                           datasets: [
                             {
-                              label: "Max Usage",
-
-                              axis: "y",
-
-
                               data: units,
                               backgroundColor: colors,
                               hoverOffset: 4,
