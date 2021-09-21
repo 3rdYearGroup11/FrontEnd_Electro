@@ -162,6 +162,8 @@ export default function CalculateBillForm(props) {
             label="Quantity"
             name="quantity"
             type="number"
+            inputProps={{min:0}}
+
             value={values.quantity}
             onChange={handleInputChange}
             error={errors.quantity}
@@ -185,6 +187,7 @@ export default function CalculateBillForm(props) {
             label="Peak"
             name="hPeak"
             type="number"
+            inputProps={{min:0}}
             value={values.hPeak}
             onChange={handleInputChange}
             error={errors.hPeak}
