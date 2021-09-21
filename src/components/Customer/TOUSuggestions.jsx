@@ -3,10 +3,10 @@ import { Card } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import ReactPaginate from "react-paginate";
 import "../../assets/css/TOUSuggestions.css";
-import {BsSearch} from 'react-icons/bs';
+// import {BsSearch} from 'react-icons/bs';
 import Axios from 'axios';
 import SearchBar from "material-ui-search-bar";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ConfirmDialog from "./bill_control/ConfirmDialog";
 
 
@@ -76,20 +76,24 @@ const TOUSuggestions = (props) => {
     if (response.data.status) {
       var today = new Date();
       var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-      setCardInfo(response.data.data);
-      props.setSuggestions(response.data.data);
+      
+       props.setSuggestions(response.data.data);
        props.setBillId(response.data.data[0].bill_id);
        props.setDate(date);
        props.setButtonState(false);
-
+       setCardInfo(response.data.data);
+       setSearchRecords(response.data.data);
 
     }else{
 
-      setCardInfo([]);
+      
       props.setSuggestions([]);
        props.setBillId("");
        props.setDate("");
        props.setButtonState(true);
+       setCardInfo([]);
+       setSearchRecords([]);
+
     }
 
     setConfirmDialog({
@@ -128,7 +132,6 @@ const TOUSuggestions = (props) => {
     if(response.data.status){
       var today = new Date();
      var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-      console.log("The date is:",date);
       props.setSuggestions(response.data.data);
       props.setDate(date);
       props.setBillId(response.data.data[0].bill_id);
