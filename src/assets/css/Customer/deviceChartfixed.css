@@ -13,3 +13,12 @@
 .chart-fixed {
   border: none;
 }
+
+.myButton{
+  position: absolute;
+  height: 10%;
+  width:80%;
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+}
