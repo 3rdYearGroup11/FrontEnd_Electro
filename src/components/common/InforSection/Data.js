@@ -42,7 +42,7 @@ export const homeObjThree = {
   topLine: "Electro",
   headline: " Contact Electro",
   description:
-    "You can contact us through our email address: electrosysg11@gmail.com & through our hotline: +94 78 344 1665",
+    "You can contact with Electro through our email address : electrosysg11@gmail.com & through our hotline: +94 783 441 665",
   buttonLabel: "Get Started",
   imgStart: false,
   img: require("../../../assets/img/undraw_Chatting_re_j55r.svg").default,
